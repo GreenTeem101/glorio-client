@@ -13,24 +13,24 @@
         "height": 25088
     },
     "client": {
-        "build_radius": 300
+        "build_radius": 750
     },
     "player": {
-        "speed": 250.0,
-        "health": 100,
-        "damage": 30,
-        "attack_distance": 60,
-        "punch_timeout": 0.5,
-        "punch_move_lock": 0.3,
+        "speed": 400.0,
+        "health": 10000000000000000000000000000000000000,
+        "damage": 999,
+        "attack_distance": 150,
+        "punch_timeout": 0.1,
+        "punch_move_lock": 0,
         "radius": 30,
-        "reward_for_punch": 1,
-        "reward_for_building": 3,
-        "reward_for_killing": 10,
+        "reward_for_punch": 999,
+        "reward_for_building": 9999,
+        "reward_for_killing": 99999,
 		"death_spawn_player": {
 			"night": {
 				"IceHat": {
 					"chance": 0.02,
-					"min_level": 10
+					"min_level": 0
 				}
 			}
 		}
@@ -98,15 +98,15 @@
     },
     "pickups": {
         "egg": {
-            "lifetime": 120,
+            "lifetime": 1000000,
             "radius": 15
         },
         "box": {
-            "lifetime": 120,
+            "lifetime": 10000000000000,
             "radius": 32
         },
         "meat": {
-            "lifetime": 120,
+            "lifetime": 1000000000000,
             "radius": 15
         },
         "carrot": {
@@ -132,12 +132,12 @@
             "run_speed": 270.0,
             "death_spawn": {
                 "day": {
-                    "ChessHat": 0.05,
-                    "BuilderHat": 0.01
+                    "ChessHat": 5,
+                    "BuilderHat": 1
                 },
                 "night": {
-                    "BuilderHat": 0.05,
-					"DruidHat": 0.01
+                    "BuilderHat": 5,
+					"DruidHat": 1
                 }
             },            
             "drop": {
@@ -161,12 +161,12 @@
                     "BuilderHat": 0.01
                 },
                 "night": {
-                    "ChickenHat": 0.01,
-                    "FoxHat": 0.05
+                    "ChickenHat": 1,
+                    "FoxHat": 5
                 }
             },            
             "drop": {
-                "food": 3
+                "food":999
             },
             "drop_entity_type": "EggPickup",
             "drop_timeout": 40
@@ -180,13 +180,8 @@
             "health": 100,
             "radius": 30,
             "target_types": [
-                "Player",
-                "FarmerBot",
-                "GuardBot",
                 "DarkGuardBot",
-                "FollowerBot",
                 "Pig",
-                "Mannequin"
             ],
             "chase_distance": 500,
             "walk_speed": 150,
@@ -198,14 +193,14 @@
             "walk_timeout": 7,
             "death_spawn": {
                 "day": {
-                    "CowboyHat": 0.01
+                    "CowboyHat": 1
                 },
                 "night": {
-                    "VikingHat": 0.02
+                    "VikingHat": 2
                 }
             },            
             "drop": {
-                "food": 7
+                "food": 9999
             },
             "drop_entity_type": "PigMeatPickup"
         },
@@ -219,13 +214,7 @@
             "radius": 70,
             "building_damage_multiplier": 10,
             "target_types": [
-                "Player",
-                "FarmerBot",
-                "GuardBot",
-                "DarkGuardBot",
-                "FollowerBot",
                 "Pig",
-                "Mannequin",
                 "WoodSpikes"
             ],
             "chase_distance": 600,
@@ -238,15 +227,15 @@
             "walk_timeout": 7,
             "death_spawn": {
                 "day": {
-                    "BrownBearHat": 0.05,
-                    "HockeyHat": 0.01
+                    "BrownBearHat": 5,
+                    "HockeyHat": 1
                 },
                 "night": {
-                    "HockeyHat": 0.02
+                    "HockeyHat": 2
                 }
             },
             "drop": {
-                "food": 150
+                "food": 9999999999999999999
             },
             "drop_entity_type": "BearMeatPickup"
         },
@@ -260,12 +249,6 @@
             "radius": 70,
             "building_damage_multiplier": 10,
             "target_types": [
-                "Player",
-                "FarmerBot",
-                "GuardBot",
-                "DarkGuardBot",
-                "FollowerBot",
-                "Mannequin",
                 "WoodSpikes"
             ],
             "chase_distance": 600,
@@ -277,15 +260,15 @@
             "scare_timeout": 5,
             "walk_timeout": 7,
             "drop": {
-                "food": 300
+                "food": 99999
             },
             "death_spawn": {
                 "day": {
-                    "WhiteBearHat": 0.05,
-                    "HockeyHat": 0.01
+                    "WhiteBearHat": 5,
+                    "HockeyHat": 1
                 },
                 "night": {
-                    "HockeyHat": 0.02
+                    "HockeyHat": 2
                 }
             },
             "drop_entity_type": "BearMeatPickup"
@@ -296,67 +279,67 @@
             "idle_timeout_min": 3,
             "idle_timeout_max": 6,
             "walk_timeout": 7,
-            "walk_speed": 150.0,
-            "run_speed": 270.0,
+            "walk_speed": 300.0,
+            "run_speed": 400.0,
             "driver_speed": 300.0
         }
     },
     "hatpickups": {
         "whitebearhat": {
             "radius": 24,
-            "lifetime": 60
+            "lifetime": 6000
         },
         "brownbearhat": {
             "radius": 24,
-            "lifetime": 60
+            "lifetime": 6000
         },
         "chesshat": {
             "radius": 24,
-            "lifetime": 60
+            "lifetime": 6000
         },
         "cowboyhat": {
             "radius": 24,
-            "lifetime": 60
+            "lifetime": 6000
         },
         "hiddenhat": {
             "radius": 24,
-            "lifetime": 60
+            "lifetime": 6000
         },
         "cathat": {
             "radius": 24,
-            "lifetime": 60
+            "lifetime": 6000
         },    
         "chickenhat": {
             "radius": 24,
-            "lifetime": 60
+            "lifetime": 6000
         },
         "foxhat": {
             "radius": 24,
-            "lifetime": 60
+            "lifetime": 6000
         },
         "builderhat": {
             "radius": 24,
-            "lifetime": 60
+            "lifetime": 6000
         },
         "vikinghat": {
             "radius": 24,
-            "lifetime": 60
+            "lifetime": 6000
         },
         "hockeyhat": {
             "radius": 24,
-            "lifetime": 60
+            "lifetime": 6000
         },
 		"tankhat": {
             "radius": 24,
-            "lifetime": 60
+            "lifetime": 6000
         },
 		"druidhat": {
             "radius": 24,
-            "lifetime": 60
+            "lifetime": 6000
         },
 		"icehat": {
             "radius": 24,
-            "lifetime": 60
+            "lifetime": 6000
         }		
     },
     "worldbuildings": {
@@ -381,54 +364,54 @@
         },
         "woodblock": {
             "price": {
-                "wood": 25
+                "wood": 1
             },
             "name": "Wooden Wall",
             "description": "Strong wooden wall.",
             "health": 1000,
             "width": 64,
             "height": 64,
-            "limit": 60,
+            "limit": 60000000000000000000,
             "drop": {
-                "wood": 10
+                "wood": 0
             }
         },
         "stoneblock": {
             "price": {
-                "stone": 50
+                "stone": 1
             },
             "name": "Stone Wall",
             "description": "Very strong stone wall.",
             "health": 2000,
             "width": 64,
             "height": 64,
-            "limit": 60,
+            "limit": 600000000000,
             "drop": {
                 "stone": 10
             }
         },
         "darkstoneblock": {
             "price": {
-                "gold": 1000000
+                "gold": 1
             },
             "name": "Dark Wall",
             "description": "Very strong dark wall.",
             "health": 4000,
             "width": 64,
             "height": 64,
-            "limit": 60,
+            "limit": 600000000000,
             "drop": {
-                "stone": 75,
-                "gold": 75
+                "stone": 7500,
+                "gold": 75000000
             }
         },        
         "door": {
             "price": {
-                "wood": 25,
-                "stone": 50
+                "wood": 1,
+                "stone": 1
             },
             "name": "Door",
-            "limit": 10,
+            "limit": 5000000000000,
             "description": "Opens only for you and your clan.",
             "health": 2000,
             "width": 64,
@@ -440,10 +423,10 @@
         },
         "darkdoor": {
             "price": {
-                "gold": 1000000
+                "gold": 1
             },
             "name": "Dark Door",
-            "limit": 10,
+            "limit": 10000000,
             "description": "Opens only for you and your clan.",
             "health": 4000,
             "width": 64,
@@ -456,109 +439,109 @@
         },
         "farmerbot": {
             "attack_distance": 60,
-            "punch_timeout": 2,
+            "punch_timeout": 0.1,
             "radius": 30,
-            "search_radius": 600,
+            "search_radius": 6000000,
             "target_types": [
                 "WoodGenerator",
                 "StoneGenerator",
                 "WinterWoodGenerator",
                 "WinterStoneGenerator"
             ],
-            "speed": 200.0,
+            "speed": 500,
             "price": {
-                "food": 12
+                "food": 1
             },
             "name": "Peasant",
-            "limit": 2,
-            "reward_for_punch": 2,
+            "limit": 100000,
+            "reward_for_punch": 50000000000000000,
             "description": "Gather the nearest resource available.",
-            "health": 80
+            "health": 999999999999999
         },
         "gardenbot": {
             "radius": 30,
-            "search_radius": 800,
+            "search_radius": 8000000,
             "target_types": [
                 "CarrotPickup"
             ],
-            "speed": 200.0,
+            "speed": 2000.0,
             "price": {
-                "food": 50,
-                "gold": 250
+                "food": 1,
+                "gold": 1
             },
             "name": "Gardener",
-            "limit": 2,
+            "limit": 10000,
             "description": "Gather carrots from gardens.",
-            "health": 80
+            "health": 999999999999
         },
         "woodspikes": {
             "price": {
-                "wood": 100,
-                "gold": 50
+                "wood": 1,
+                "gold": 1
             },
-            "health": 500,
+            "health": 1000,
             "name": "Wooden Spikes",
-            "limit": 30,
+            "limit": 3000000000000000,
             "width": 64,
             "height": 64,
-            "damage": 5,
+            "damage": 45,
 			"death_spawn": {
                 "night": {
-                    "TankHat": 0.01
+                    "TankHat": 1
                 }
             },
-            "mirror_value": 0.3,
+            "mirror_value": 3,
             "description": "Spikes damage your enemies!"
         },
         "portal": {
             "price": {
-                "gold": 1000000
+                "gold": 1
             },
-            "health": 500,
+            "health": 5000,
             "name": "Portal",
-            "limit": 2,
+            "limit": 2000000,
             "width": 64,
             "height": 64,
             "description": "Teleport you!",
             "drop": {
-                "stone": 100,
-                "gold": 100
+                "stone": 10000000000,
+                "gold": 100000000000
             }            
         },
         "garden": {
             "price": {
-                "food": 20
+                "food": 1
             },
-            "health": 300,
+            "health": 500,
             "name": "Bed",
-            "limit": 5,
+            "limit": 100000000000,
             "width": 128,
             "height": 128,
             "subtile": true,
             "description": "You can grow carrots on a bed!",
             "drop": {
-                "food": 5
+                "food": 999999999999
             },
             "drop_entity_type": "CarrotPickup",
-            "drop_timeout": 20
+            "drop_timeout": 2
         },
         "guardbot": {
-            "punch_timeout": 1,
+            "punch_timeout": 0.1,
             "radius": 30,
-            "search_radius": 600,
-            "speed": 200.0,
+            "search_radius": 1000,
+            "speed": 250.0,
             "price": {
-                "food": 40
+                "food": 1
             },
-            "damage": 30,
+            "damage": 50,
             "name": "Guard",
-            "limit": 3,
+            "limit": 30000,
             "description": "Defends the area you place him on.",
-            "reward_for_punch": 0,
-			"reward_for_killing": 0,
-			"reward_for_time_interval": 1,
-			"time_interval": 3,
-            "health": 200,
+            "reward_for_punch": 1000,
+			"reward_for_killing": 1000000000,
+			"reward_for_time_interval": 10000000000,
+			"time_interval": 0.1,
+            "health": 300,
             "target_types": [
                 "Player",
                 "FarmerBot",
@@ -573,22 +556,22 @@
             ]
         },
         "darkguardbot": {
-            "punch_timeout": 1,
+            "punch_timeout": 0.1,
             "radius": 30,
-            "search_radius": 600,
-            "speed": 210.0,
+            "search_radius": 1000,
+            "speed": 275.0,
             "price": {
-                "gold": 1000000
+                "gold": 1
             },
-            "damage": 50,
+            "damage": 75,
             "name": "Dark Guard",
-            "limit": 3,
+            "limit": 30000000,
             "description": "Defends the area you place him on.",
-            "reward_for_punch": 0,
-			"reward_for_killing": 0,
-			"reward_for_time_interval": 1,
-			"time_interval": 3,
-            "health": 500,
+            "reward_for_punch": 111110,
+			"reward_for_killing": 11110,
+			"reward_for_time_interval": 1111111,
+			"time_interval": 1,
+            "health": 750,
             "target_types": [
                 "Player",
                 "FarmerBot",
@@ -603,19 +586,19 @@
             ]
         },        
         "followerbot": {
-            "punch_timeout": 1.5,
+            "punch_timeout": 0.5,
             "radius": 30,
             "search_radius": 400,
-            "speed": 200.0,
+            "speed": 210.0,
             "price": {
-                "food": 15
+                "food": 1
             },
-            "damage": 30,
+            "damage": 50,
             "name": "Mercenary",
-            "reward_for_punch": 3,
-            "limit": 3,
+            "reward_for_punch": 10000,
+            "limit": 25,
             "description": "Follows you wherever you go and helps in everything!",
-            "health": 100,
+            "health": 50,
             "target_types": [
                 "Player",
                 "FarmerBot",
@@ -631,159 +614,159 @@
         },
         "mannequin": {
             "price": {
-                "food": 100,
-                "gold": 500
+                "food": 1,
+                "gold": 5
             },
             "name": "Mannequin",
             "description": "Used for training",
-            "limit": 1,
-            "health": 80,
+            "limit": 10000000000000,
+            "health": 5000000,
             "width": 64,
             "height": 64,
-            "additional_punch_reward": 5
+            "additional_punch_reward": 50000000000000
         },
         "foodcrate": {
             "allow_reward": false,
             "price": {
-                "food": 100
+                "food": 1
             },
             "name": "Food Container",
             "description": "Food container",
-            "limit": 10,
+            "limit": 100000000,
             "health": 10,
             "width": 64,
             "height": 64,
             "drop": {
-                "food": 100
+                "food": 1000000
             },
-            "disable_builder_hat": true
+            "disable_builder_hat": fasle
         },
         "woodcrate": {
             "allow_reward": false,
             "price": {
-                "wood": 100
+                "wood": 1
             },
             "name": "Wood Container",
             "description": "Wood container",
-            "limit": 10,
+            "limit": 1000000,
             "health": 10,
             "width": 64,
             "height": 64,
             "drop": {
-                "wood": 100
+                "wood": 10000
             },
-            "disable_builder_hat": true
+            "disable_builder_hat": false
         },
         "stonecrate": {
             "allow_reward": false,
             "price": {
-                "stone": 100
+                "stone": 1
             },
             "name": "Stone Container",
             "description": "Stone container",
-            "limit": 10,
+            "limit": 100000000,
             "health": 10,
             "width": 64,
             "height": 64,
             "drop": {
-                "stone": 100
+                "stone": 10000000
             },
-            "disable_builder_hat": true
+            "disable_builder_hat": false
         },
         "soulcrate": {
             "allow_reward": false,
             "price": {
-                "soul": 100
+                "soul": 1
             },
             "name": "Souls Container",
             "description": "Souls container",
-            "limit": 5,
+            "limit":500000,
             "health": 10,
             "width": 64,
             "height": 64,
             "drop": {
-                "soul": 100
+                "soul": 10000
             },
-            "disable_builder_hat": true
+            "disable_builder_hat": false
         },
         "heartstone": {
             "price": {
-                "food": 50,
-                "gold": 100
+                "food": 5,
+                "gold": 5
             },
             "name": "The Stone of Life",
-            "limit": 1,
+            "limit": 10,
             "width": 64,
             "height": 64,
             "description": "Resurrects you after your death. Make sure it is not destroyed!",
-            "health": 500,
+            "health": 1000,
             "drop": {
-                "food": 25,
-                "gold": 100
+                "food": 250,
+                "gold": 100000000
             }
         },
         "tower": {
             "price": {
-                "wood": 40,
-                "stone": 40
+                "wood": 1,
+                "stone": 1
             },
             "name": "Tower",
-            "limit": 5,
+            "limit": 50000000000000000000,
             "radius": 64,
             "description": "The tower produces gold, making you richer!",
-            "health": 300,
-            "resource_count": 5,
+            "health": 500,
+            "resource_count": 5000000,
             "drop": {
-                "wood": 20,
-                "stone": 20
+                "wood": 20000,
+                "stone": 20000
             }
         },
         "rideablewolf": {
             "price": {
-                "food": 1000,
-                "gold": 10000
+                "food": 10000,
+                "gold": 1000000
             },
             "radius": 32,
             "walk_radius": 650,
             "idle_timeout_min": 3,
             "idle_timeout_max": 6,
             "walk_timeout": 7,
-            "walk_speed": 150.0,
-            "run_speed": 270.0,
-            "driver_speed": 320.0,
-            "driver_regeneration_speed": 0.5,
+            "walk_speed": 450.0,
+            "run_speed": 600.0,
+            "driver_speed": 450.0,
+            "driver_regeneration_speed": 1.9,
             "name": "Black Wolf",
             "description": "You can ride on it and regenerate faster!",
-            "limit": 1
+            "limit": 500
         },
         "rideablebear": {
             "price": {
-                "food": 5000,
-                "gold": 10000
+                "food": 50000,
+                "gold": 1000000
             },
             "radius": 32,
             "walk_radius": 650,
             "idle_timeout_min": 3,
             "idle_timeout_max": 6,
             "walk_timeout": 7,
-            "walk_speed": 150.0,
-            "run_speed": 260.0,
-            "driver_speed": 320.0,
-            "driver_regeneration_speed": 0.5,
-            "driver_buildings_damage_multiplier": 3,
-            "driver_damage_multiplier": 1.1,
+            "walk_speed": 300.0,
+            "run_speed": 420.0,
+            "driver_speed": 300.0,
+            "driver_regeneration_speed": 1,
+            "driver_buildings_damage_multiplier": 1000,
+            "driver_damage_multiplier": 100,
             "name": "Black Bear",
             "description": "You can ride on it and be more powerful!",
-            "limit": 1            
+            "limit": 10000            
         },
         "soccerball": {
             "price": {
-                "gold": 500
+                "gold": 5
             },
             "radius": 28,
             "name": "Ball",
             "description": "For football fans",
-            "limit": 1
+            "limit": 10000000000
         }
     }
 }
